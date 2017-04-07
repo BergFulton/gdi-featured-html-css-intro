@@ -174,6 +174,7 @@
             <p>Magna aliqua. Ut enim ad minim veniam.</p>
             <p>Quis nostrud exercitation ullamco.</p>
           </div>
+          <aside class="notes">So you can see here that there's this CSS class called "align right". Then you see down below in the HTML, there's a dive with the "align-right" class assigned. If you look down below, you see that only the two lines in the div have that class applied. Those two other p's are unaffected by that rule because they exist outside the div.</aside>
         </section>
 
         <section>
@@ -194,7 +195,7 @@
         <section>
           <h3>Let's Develop It</h3>
            <p>Let's create a site using divs to separate content into different sections on our page.</p>
-           <p>Create a header, content area, sidebar, and a footer.</p>
+           <p>Create a header, content area, a sidebar, and a footer.</p>
         </section>
 
         <section>
@@ -325,6 +326,7 @@ a:active {color:#0000FF;} /* selected link */
         <section>
           <h3>Box Model</h3>
           <img src="img/box-model.png" alt="Graphic illustrating box model"/>
+          <aside class="notes">Alright everyone, buckle up. We're going to talk about one of the most tricky concepts, the box model! What if I told you that your website was a series of boxes? Each element on your page is is composed of a box similar to this, and the box has a content area, padding, a border, and a margin. You can see this in the inspector. So what the heck does this mean? Let's dig through some of those layers.</aside>
         </section>
 
         <!-- Padding -->
@@ -332,6 +334,7 @@ a:active {color:#0000FF;} /* selected link */
           <h3>Padding</h3>
           <p>Space between the border and the content</p>
           <img src="img/box-model-padding.png" alt="Graphic illustrating box model, padding highlighted"/>
+          <aside class="notes">Padding is the space between the border & the content, so your text, your image, etc.</aside>
         </section>
 
         <section>
@@ -348,6 +351,7 @@ a:active {color:#0000FF;} /* selected link */
 <pre><code class="css">padding-top: 10px;</code></pre>
           <p>10 on top, 5 on right, 3 on bottom, 5 on left</p>
 <pre><code class="css">padding: 10px 5px 3px 5px;</code></pre>
+  <aside class="notes">You can add padding to your box in CSS. A few tricks to use: If you want to set the spacing the same the whole way around, you just need one declaration. 15px = 15 px all the way around. If you want 10 pixels only on the top, you use padding-top: then a value. If you want to assign different values to each side of the box, use padding: and then the assignment goes clockwise- top, right, bottom, left. </aside>
         </section>
 
         <section>
@@ -378,6 +382,7 @@ a:active {color:#0000FF;} /* selected link */
           <p>Borders are specified as "thickness, style, color."</p>
           <p>A solid red border</p>
 <pre><code class="css">border: 1px solid #ff0000;</code></pre>
+<pre><code class="css">border: 1px solid red;</code></pre>
           <p>A thick dotted black top border</p>
 <pre><code class="css">border-top: 4px dotted #000000;</code></pre>
           <p>Two diﬀerent border styles</p>
@@ -435,6 +440,7 @@ width: 300px;
   margin: 0 auto;
 }
 </code></pre>
+<aside class="notes">Wrappers are very handy for doing this kind of positioning work, where you want to have all of your elements behave in the same way, usually for appearance purposes. So, for example, here we've created a div with the class of wrapper, everything in that wrapper has a width of 100%, meaning it takes up all of its container, the max-width it can get to is 1400 pixels, and it has margin set to 0 auto, meaning no margin top/bottom, but auto margin left to right. This will center your content in the page!</aside>
         </section>
 
         <!-- Exercise -->
@@ -450,12 +456,13 @@ width: 300px;
           <h3>Property: Width</h3>
           <p>Sets the width of an element.</p>
           <p>Does not include padding or borders. Remember to add these to the width.</p>
-<pre><code class="css">div#sidebar{
+<pre><code class="css">div #sidebar{
   width: 31%;
   padding: 1%;
   border: none; //Total width is 33%
 }
 </code></pre>
+<aside class="notes">When you set the width and heigh properties of an element with CSS, you just set the width and height of the CONTENT AREA, to calculate the full size of an element, you must also add the padding, borders and margins. Now, if you're like me and the first time you saw this slide you're like "whoa, what's up with that math? That's because we're looking for the total width of the box, and there is 1% padding all around. So there's 1 percent right, and one percent left that we need to add to our 31 percent width to get a total.</aside>
         </section>
 
         <!-- height-->
@@ -469,6 +476,7 @@ width: 300px;
   border: 2px solid red; //Total height is 64px
 }
 </code></pre>
+<aside class="notes">Just like width, the height property does not include padding or borders, it's just the inner content area. So if you need the total height of the box, add those! Same deal here! we're looking for the total height, so we have to add the top and bottom values of the padding and border attributes.</aside>></ASIDE>
         </section>
 
         <!-- Exercise -->
