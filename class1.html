@@ -80,7 +80,7 @@
         <li>What's your favorite dessert?</li>
       </ul>
       </div>
-      <aside>So let's do some quick intros. I'm Tracey Berg-Fulton, and I'm hoping to share my love of HTML/CSS with you & get you as excited about this as I am, and my favorite dessert is birthday cake from Priory bakery.</aside>
+      <aside class="notes">So let's do some quick intros. I'm Tracey Berg-Fulton, and I'm hoping to share my love of HTML/CSS with you & get you as excited about this as I am, and my favorite dessert is birthday cake from Priory bakery.</aside>
     </section>
 
 
@@ -95,7 +95,7 @@
       <h3>What is HTML?</h3>
       <p>If you 'view the source', you see this</p>
       <img src = "img/homepage-html.png" alt="Screenshot of the Girl Develop It page source code">
-      <aside>I like to think of this like an X-ray. You're taking a look at the inner workings of the site.</aside>
+      <aside class="notes">I like to think of this like an X-ray. You're taking a look at the inner workings of the site.</aside>
     </section>
 
     <!-- History of HTML-->
@@ -118,7 +118,7 @@
         <li>XHTML in 2000</li>
         <li>HTML 5 in 2014</li>
       </ul>
-      <aside>So HTML started out in the early days of the internet, and has gone through a few versions. We're going to using the HTML5 syntax, which is to say the HTML5 way of writing and structuring our pages. The TL;DR is that HTML has evolved over time, and will probably evolve even further. </aside>
+      <aside class="notes">So HTML started out in the early days of the internet, and has gone through a few versions. We're going to using the HTML5 syntax, which is to say the HTML5 way of writing and structuring our pages. The TL;DR is that HTML has evolved over time, and will probably evolve even further. </aside>
     </section>
 
     <!-- Terms-->
@@ -134,6 +134,7 @@
         <li><strong>Back end</strong><br />
         The inner workings and functionality of a website or application.</li>
       </ul>
+      <aside class="notes">Let's go over some words you may here thrown around.</aside>
     </section>
 
     <!-- Nitty gritty 1 - Clients and servers -->
@@ -159,6 +160,7 @@
         <a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a> - Windows, Mac, Linux<br />
         <a href="http://www.barebones.com/products/textwrangler/TextWrangler" target="_blank">TextWrangler</a> - Mac</li>
       </ul>
+      <aside class="notes">So here's a few tools of the trade. I want to take a minute here to say that everyone uses different tools for different reasons. They're all good, but people have some strong opinions about them. Know that there's no one perfect set, just find one that works for you. My personal tool kit is Chrome, and Sublime text, but my spouse uses Atom, as do many others. It's all good!</aside>
     </section>
 
     <!-- Folder Structure -->
@@ -180,6 +182,18 @@
       <div class="halfblock">
         <img src="img/folderstructure1.png" alt="Diagram showing html-site folder with sub-folder for images, index.html, and styles.css" />
       </div>
+      <aside class="notes">Next, let's take a few minutes to get our file structure set up. Like many things, web development is easier when you're organized. Let's go ahead and create a new folder for your site to live in. Call it something like "GDI Site", "Intro to HTML", etc. 
+
+      Then, inside of that file (I'll also use the term directory), create another file called "images" or "img". 
+
+      Then, open up your text editor of choice and create a file called "index.html". All you have to do this is open up a tab, and name the file "index.html" Save the index file to your GDI Site folder. 
+
+      Then, let's use the text editor to create another file called "styles.css", the same way you created your "index.html" file. Just add that ".css" on the end. Save that inside the GDI Site folder too. 
+
+      Cool, now that we're all set up, let's talk about where we're headed. 
+
+  
+      </aside>
     </section>
 
     <section>
@@ -191,6 +205,7 @@
       <h3>Final project</h3>
       <img src="img/sample-page.png" alt="Screenshot of a sample page"/>
       <p>By the end of the class, you will have built a simple site using HTML and CSS on a topic of your choice. <a href="sample-code/final/index.html" target="_blank">Here is one about rock climbing.</a>
+      <aside class="notes">So we're going to build a site with images, headers, text, links, and lists. It might look a little like this? It might not! You can make your site about whatever you want.</aside>
     </section>
 
     <section>
@@ -200,6 +215,7 @@
       <strong>+ CSS</strong>: Presentation<br />
       <strong>= Your Website</strong></p>
       <p>A website is a way to present your content to the world, using HTML and CSS to present that content &amp; make it look good.</p>
+      <aside class="notes">So in your website, HTML provides the structure, CSS makes it look good & comprehensive. Together they make up your website. </aside>
     </section>
 
     <section>
@@ -240,12 +256,14 @@
           </ul>
         </li>
       </ul>
+      <aside class="notes">An element is an individual unit or component of HTML. The tag marks the start & end of an element, basically saying "Hey! This thing right here? That's a paragraph!" or "Hey, image is here!"</aside>
     </section>
 
     <!--anatomy of a tag -->
     <section>
       <h3>Tag Breakdown</h3>
       <img src="img/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none;" />
+      <aside class="notes">Here's the breakdown of an HTML tag. I'm going to go ahead and get this out there...more than once today, I will forget to close a tag. It happens! So if you find yourself with something that isn't working, first step is to check for typos, second step is to make sure you've closed your tags. </aside>
     </section>
     <section>
       <h3>Anatomy of an HTML element</h3>
@@ -268,6 +286,7 @@
           </ul>
         </li>
       </ul>
+      <aside class="notes">Container elements can, surprise, contain things! Like text in a paragraph. Standalone elements can't contain anything else. Break can only be a break, image is only an image. </aside>
     </section>
 
     <section>
@@ -293,6 +312,9 @@
           </ul>
         </li>
       </ul>
+      <aside class="notes">So elements can have attributes, and those attributes give you additional information about the element, such as its class, identity, source, etc. You put attributes inside the opening tag, but before the right angle "greater than" bracket. 
+
+      And value is what is being assigned to a given attribute. These must live inside of quotation marks. Missing quotation marks is another easy to make mistake! </aside>
     </section>
 
     <!-- HTML Page-->
@@ -316,18 +338,24 @@ www.w3.org/TR/html4/loose.dtd"&gt;
 
 &lt;/html&gt;
 </code></pre>
+
+<aside class="notes">Ok, this looks a bit wild, but fear not. In order for a browser to know that the file you're serving it is indeed HTML and not a plate of spaghetti, you've got to make this declaration and proudly annouce that it's HTML. All you need is the doctype html, not the rest of the noise. </aside>
     </section>
 
     <section>
       <h3>Head and Body Tags</h3>
       <p><strong>Head:</strong> The head contains the title of the page &amp; meta information about the page. Meta information is not visible to the user, but has many purposes, like providing information to search engines.</p>
       <p><strong>Body:</strong> The body contains the actual content of the page. Everything that is contained in the body is visible to the user.</p>
+      <aside class="notes">OK, now that we've told the server that this file is HTML, we're done right? But what's this html tag noise? OK, so, there are occasions where you may have other types of code on a page, such as JavaScript, and those get their own tags, such as "script". When we use the HTML tags, we're saying that everything bound in between them is HTML. They're like the big wrapper over our whole work today. </aside>
     </section>
 
     <!--example of head and body tags-->
     <section>
       <h3>Head and Body Tags: Example</h3>
       <img src="img/example-headbody.png" alt="example of head and body" />
+      <aside class="notes">Wait, what? Head and body? So there's a bit of magic that happens between the browser and your HTML. The header is part of that magic. The header tells the browser a lot of valuable information, such as the page's title, and also provides data to search engines. Links to other files also live in the header. But here's the thing. No one will ever know it's there. It just hums away, doing its thing. 
+
+The body is where the public stuff goes. Anything you put inside the body is visible to the user. This is where your paragraphs, your imgages, everything, goes. </aside>
     </section>
 
     <section>
@@ -342,6 +370,7 @@ www.w3.org/TR/html4/loose.dtd"&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
+
     </section>
 
     <!-- Develop it -->
@@ -349,13 +378,15 @@ www.w3.org/TR/html4/loose.dtd"&gt;
       <h3>Let's develop it!</h3>
       <p>Let's get our web page set up with a doctype, head, title and body.</p>
       <p>Later we'll add some content.</p>
+      <aside class="notes">OK, we've covered a lot. So let's practice. Let's crack open that index.html file. We're going to take a few mintes, and I want you to add the doctype declaration, the head tags, title tags & title, and the body tags. Don't worry about content, just get the scaffolding in place to build upon. Remember to check your spelling, and close those tags! Give it a shot, and the TA's will be around to help.</aside>
     </section>
 
     <!-- Nesting-->
     <section>
-      <h3>Nesting</h3>
+      <h3>Nesting 🥚🦆</h3>
       <p>All elements "nest" inside one another</p>
       <p>Nesting is what happens when you put other containing tags inside other containing tags. For example, you would put the &lt;p&gt; inside of the &lt;body&gt; tags. The &lt;p&gt; is now nested inside the &lt;body&gt;</p>
+      <aside class="notes">Nesting is when you put containing tags inside other containing tags. For example putting paragraphs inside the body. Nesting helps group elements together, and can help you when you're deciding how they should look or behave.</aside>
     </section>
 
     <section>
@@ -406,6 +437,7 @@ www.w3.org/TR/html4/loose.dtd"&gt;
         </div>
         <p class="clear"><small>* White space is only for humans. You can write your code with any spacing.</small></p>
       </div>
+      <aside class="notes">Let's meet one of the hardest working elements, the p tag, or paragraph. As an aside, paragraphs do not have to be multiple lines! This isn't english class, we're not going to judge you on the length of your paragraph. P's can be just one word, or thousands of words. An important note: regardless of how you write paragraphs in your file, they come out the same. Whitespace is for humans, and it's important!</aside>
     </section>
 
     <section>
@@ -438,12 +470,14 @@ www.w3.org/TR/html4/loose.dtd"&gt;
       </div>
       <p class="clear"><small>* Heading number indicates hierarchy, not size. Think of outlines from high school papers</small></p>
     </div>
+    <aside class="notes">So, the h tag, or heading. H tags go from h1 to h6, with descending order, meaning h1 is bigger than h2, etc. It's important to note that you should use heading size to indicate importance, rather than for style. We can style them with CSS later. Think of h1 as a headline, h2s as a subheader, h3's as a subhead to a subhead, etc. Most times, you don't get beyond h3, or h4.</aside>
     </section>
 
     <!--heading examples-->
     <section>
       <h3>Example: Headings</h3>
       <img src="img/example-headings.png" alt="Example of headings" />
+      <aside class="notes"></aside>
     </section>
 
     <!-- Em and Strong-->
@@ -459,7 +493,7 @@ Here is a paragraph with &lt;em&gt;emphasized&lt;/em&gt; text and &lt;strong&gt;
         <div class="halfblock">
           <p>Here is a paragraph with <em>Emphasized</em> text and <strong>Important</strong> text.</p>
         </div>
-        <p class="clear"><small>* Notice: em and strong are meant to indicate meaning through style. If you want to have italicized for appearance and not to communicate meaning, you should use CSS.</small></p>
+        <p class="clear"><small>* Notice: <strong>em</strong> and <strong>strong</strong> are meant to indicate meaning through style. If you want to have italicized for appearance and not to communicate meaning, you should use CSS.</small></p>
       </div>
     </section>
 
@@ -470,6 +504,7 @@ Here is a paragraph with &lt;em&gt;emphasized&lt;/em&gt; text and &lt;strong&gt;
       <p class="left-align">Add one of each level of heading with 1-2 short paragraphs of text below each heading. </p>
       <p class="left-align">Use &lt;strong&gt; and &lt;em&gt; within a few paragraphs.</p>
       <p class="left-align">Need some text? Lorem Ipsum to the rescue!</p>
+      <p class="clear"><small>Cupcake Ipsum? Puppy Ipsum? </small></p>
     </section>
 
     <!-- Links-->
@@ -485,6 +520,7 @@ Here is a paragraph with &lt;em&gt;emphasized&lt;/em&gt; text and &lt;strong&gt;
 </code></pre>
       <p><a href ="http://www.girldevelopit.com" title="Girl Develop It">Girl Develop It</a></p>
       <p>The &lt;a&gt; tag surrounds text or images to turn them into links</p>
+      <aside class="notes">Ok, now that we've got content, we've got some structure, let's talk about going places with links. Links are a little tricky because they need a few things. They need the "a" or "anchor" tag to kick it off. They also need a HREF, or the actual meat of the link, and they need a title attribute. The A tag surrounds text or images to turn them in to links, but the href tells you where its going. Using Title is also good for people who navigate the internet with screen readers or other assistive technologies.</aside>
     </section>
 
     <!-- Link Attributes -->
@@ -498,6 +534,7 @@ Here is a paragraph with &lt;em&gt;emphasized&lt;/em&gt; text and &lt;strong&gt;
 <pre><code class="html">&lt;a href="mailto:sponsorships@girldevelopit.com"&gt;E-mail us!&lt;/a&gt;
 </code></pre>
       <p><small>Adding <strong>mailto:</strong> directly before the email address means the link will open in the default email program.</small></p>
+      <aside class="notes">Links can also do things like launch an email application, or open themselves in a new tab. Using target="_blank" will open a link in a new tag. putting "mailto:" before an email address will automatically pop open the default email program. So, you see the text of "Email us!" after the close of the mailto attribute? That's what will appear as a link text, generally it'll have an underline. That's where you can get creative and make a user's experience of navigating your content easier. Those linkage words give people an idea of what that link is going to do and where it is going to take them.</aside>
     </section>
 
     <!-- relative & absolute links -->
@@ -518,6 +555,9 @@ Here is a paragraph with &lt;em&gt;emphasized&lt;/em&gt; text and &lt;strong&gt;
         </ul>
         </li>
       </ul>
+      <aside class="notes">There are two types of links, relative, and absolute. This is a bit of a tough concept to explain, so i'm going to share some links to some explainers in case you'd like a different explainer. So the basics: relative links are relative to the page they appear on. Relative links usually are linking to another page or file within your site. So for instance, remember our file structure? Both the folder "images" and the "index.html" file are in the same overarching folder of "GDI HTML" If you had a file within that images folder that you wanted to link to on your site, you'd need to link to it at img/picture.jpg. If they were at the same level, say you had no images folder, you'd just link to "picture.jpg". 
+
+      Absolute paths refer to a specific file or site, including its domain. TYpically this is if you wanted to link elsewhere, like to your facebook page, or your twitter account. </aside>
     </section>
 
     <!-- Lets develop it-->
@@ -541,6 +581,11 @@ Here is a paragraph with &lt;em&gt;emphasized&lt;/em&gt; text and &lt;strong&gt;
 alt="Girl Develop It logo"/&gt;
 </code></pre>
       <p><small>* Notice: This tag is our first example of a stand-alone or "self-closing" element.</small></p>
+      <aside class="notes">Alright, we've gotten links going, now let's talk about pictures! 
+        To add an image to your page, you use the tag img. IMG is self closing, our first tag like that so far. It has an attribute called "src" or source. Basically, the image tag is asking, "cool, where's your picture located? What's it's source. Now you can link to an image somewhere on the internet, like in this example, or you can use a relative link to something that's already in your images folder, where this would look like "img/logo.jpg".
+
+        Images also have an attribute caled "alt", also refered to as "alt text". Again this is very important to users who access your page with screen readers or other assistive devices, as those devices will see that alt text and announce it to the user. So someone who is blind would hear a description "Girl Develop It logo", as long as we apply alt text to it. Be careful not to be too verbose in your alt text, but you want to also be sufficiently descriptive. It's a fine balance. 
+      </aside>
     </section>
 
     <!-- Line Break-->
@@ -566,6 +611,7 @@ Above us only sky
         </div>
         <div class ="clear"></div>
       </div>
+      <aside class="notes">Line breaks are helpful for breaking lines in a very specific place. For example, if you're writing a poem or lyrics to a song.</aside>
     </section>
 
     <!-- Develop it! -->
@@ -606,6 +652,9 @@ Above us only sky
       </div>
       <div class ="clear"></div>
     </div>
+    <aside class="notes">Lists come in two flavors, unordered and ordered. Unordered show up as bullets by default (this can be changed), and ordered will display a 1, 2, 3 etc by defualt. You don't have to add the numbers, HTML does that for you, so put them in the sequence you'd like them to be in. 
+
+    To make an unordered list you use the tag "ul". Each item within that list is a "li" for list item. Ordered lists use "ol" for ordered list, and also have "li" inside them. Just as a heads up, li's cannot exist outside of a UL or an OL, they're dependent upon being one of those two things. </aside>
     </section>
 
     <!-- example of lists -->
@@ -614,6 +663,7 @@ Above us only sky
       <p>Lists can be used to organize any list of items.</p>
       <img src="img/example-lists.png" alt="Examples of lists"/>
       <p><small>You'd be surprised how often lists are used in web design.</small></p>
+      <aside class="notes">The internet is made up of lists. Navigation, regular content like instructions, and sidebars, are all lists!</aside>
     </section>
 
     <!-- Develop it!-->
@@ -641,6 +691,7 @@ Above us only sky
 &lt;/ol>
 -->
 </code></pre>
+<aside class="notes">Comments are super awesome! Particularly if you are working with someone else, it's helpful to comment your code so that people can follow. I also use this as a way to leave notes for myself to come back to stuff. Comments won't be displayed on the page, but if you view source, comments will be visible, so keep that in mind.</aside>
     </section>
 
  <!--Tables
@@ -688,7 +739,7 @@ Above us only sky
     </section>
      -->
 
-    <!-- Character codes-->
+    <!-- Character codes
     <section>
       <h3>Character codes</h3>
       <p>There are character codes for many different characters in many different languages</p>
@@ -705,7 +756,7 @@ Above us only sky
         <img src="img/example-characters.png" alt="Example of Characters"/>
       </div>
       <div class ="clear"></div>
-    </section>
+    </section>-->
 
     <section>
       <h2>Questions?</h2>

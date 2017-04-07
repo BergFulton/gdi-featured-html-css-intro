@@ -49,7 +49,7 @@
           <section>
             <img src="img/circle-gdi-logo.png" alt="GDI Logo" class="noborder">
             <h1>Intro to HTML/CSS</h1>
-            <h2>Class 2</h2>
+            <h2>Part 2</h2>
           </section>
 
           <!-- Quiz 1-->
@@ -101,17 +101,20 @@
             <p>CSS = <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</p>
             <p>CSS is a "style sheet language" that lets you style the elements on your page.</p>
             <p>CSS is works in conjunction with HTML, but is not HTML itself.</p>
+            <aside class="notes">And now we arrive at CSS. CSS gives us style!</aside>
           </section>
 
           <section>
             <h3>CSS: What can it do?</h3>
-            <p>All colored text, position, and size</p>
+            <p>All color, text, position, and size</p>
             <img src = "img/homepage-view.png" alt="Screenshot of homepage">
+            <aside class="notes">So what can CSS do? A lot actually! CSS controls color, text, position (where and how things appear) and size. CSS can also do some pretty amazing things with animation, but that's a topic for another class. Let's just CSS is pretty darn powerful. </aside>
           </section>
 
           <section>
             <h3>CSS: What does it look like?</h3>
             <img src = "img/homepage-css.png" alt="Screenshot of CSS">
+
           </section>
 
           <!-- The CSS Rule-->
@@ -150,6 +153,7 @@
             <p>Uses the HTML attribute style.</p>
             <p>Difficult to use in large projects</p>
             <p>Not preferred.</p>
+            <aside class="notes">Inlineing your CSS works by adding the HTML attribute "style" and then assigning it a property and value, in this intance, we're saying that we want the text to have the color red. This gets really unweidly, and it can be hard to keep track of all of these rules on a larger project. This method isn't preferred. </aside>
           </section>
 
           <!-- Embedded -->
@@ -168,6 +172,7 @@
             <p>Uses &lt;style&gt; tag.</p>
             <p>Can only be used in one html file</p>
             <p>Useful if you write HTML email newsletters!</p>
+            <aside class="notes">Another way to get HTML & CSS associated with each other is by embedding styles in the head element. Within the head, you can add the style tag, and add styles in there. The downside is that, if you do it this way, that css can only be used in that singular file. If you had another page called puppies.html, you'd either have to copy &past this CSS over there, or start from scratch. It's not terribly useful if you have a multipage site. HOWEVER! Embedded CSS is the bread and butter of email newsletters. For instance, here's an HTML newsletter that I write every week that uses Embedded CSS, but it is only one page, so it's a perfect usecase.</aside>
           </section>
 
           <!-- External-->
@@ -183,6 +188,7 @@
               <li>Easy to maintain in larger projects.</li>
               <li>Preferred! 💯</li>
             </ul>
+            <aside class="notes">So if the first two methods are suboptimal for most cases, what do we do? We link! By linking to the CSS file, we enable pages to use that CSS on their page, meaning we don't have to repeat, retype, or remember that CSS. It also reduces your filesize, and keeps all of your style rules tucked in to a nice neat place. So all you do is add the link text in the header like so. </aside>
           </section>
 
           <!-- Exercise-->
@@ -197,6 +203,7 @@
   background-color: yellow;
 }
 </code></pre>
+<aside class="notes">OK, so if you haven't already created a style.css file, do that now! Then, let's go in to your index.html file and get it linked up! Finally, add this CSS rule below. </aside>
           </section>
 
           <!-- CSS Syntax -->
@@ -211,6 +218,7 @@
   property: value;
 }
 </code></pre>
+<aside class="notes">CSS Syntax is important, so let's take a look. The CSS sytax begins with the selector, or the thing you are selecting to be styled. Then we add curly braces, we then say what property we'd like to style, then a colon, and then what we want that style to be.</aside>
           </section>
           <!-- Selectors elements-->
           <section>
@@ -235,7 +243,6 @@
               <li><strong>Color name</strong> (ex. red)</li>
               <li><strong>Hexadecimal value</strong> (ex. #FF0000)</li>
               <li><strong>RGB value</strong> (ex. rgb(255, 0, 0))</li>
-              <li><strong>HSL value</strong> (ex. hsl(0, 100%, 100%))</li>
             </ul>
             <p>
               The 17 standard colors are:
@@ -257,6 +264,7 @@
               <span style="color:white; background:black;">white</span>,
               and <span style="color:yellow; background:black;">yellow</span>.
             </p>
+            <aside class="notes">Color is so important in the web, not only because, hey, we like things to look nice, but because it can convey meaning, and help users navigate a site. If you're in branding, colors and color matching are really important to an effective brand strategy. There's a few ways to tell the browser what color you want something to be. There's Color name, so just sayin "red, white, orange", there's a Hexadecimal value, which is a six character code that corresponds to the various aspects of color in it, there is also RGB values, for red green blue. You can find these values through a number of </aside>
           </section>
           <section>
             <h3>Property: Color</h3>
@@ -267,6 +275,7 @@
   color: rgb(255, 0, 0);
 }
 </code></pre>
+<aside class="notes">I have to say, this was one of those things I forgot all the time when I started. I always wanted to say "text color" or "font color" but nope, it's just color! the color property makes your text colorful. </aside>
           </section>
 
           <!-- Background color-->
@@ -279,6 +288,7 @@
   background-color: rgb(0,0,0);
 }
 </code></pre>
+<aside class="notes">Background color does what it says on the tin! It sets the background color for the element.</aside>
           </section>
 
           <!-- Exercise-->
@@ -301,6 +311,7 @@
   font-family: Arial, sans-serif;
 }
 </code></pre>
+<aside class="notes">Sometimes, you'll want to have more than one value asigned to a property. When this happens, just separate them with a comma. So here you see that font-family is set to Arial, and then a sans-serif font is set as the fallback, in case Arial wasn't available. We're going to talk about font-family next</aside>
           </section>
 
           <!-- Fonts-->
@@ -316,6 +327,7 @@
             <p>Specific font name</p>
             <p>Generic name</p>
             <p>Comma-separated list</p>
+            <aside class="notes">Font familes decide what fonts get used, and they're assigned in a comma separated list. Offering a fall back font gives your fonts a chance to fail. With something like Arial, it's a pretty safe bet, but if you get in to some fancier web fonts that may not display perfectly on every browser or every machine, it's important to offer a fallback so that users see _something_. </aside>
           </section>
 
           <!-- Font size -->
@@ -325,12 +337,16 @@
 <pre><code class = "css">p {
   font-size: 12px;
   font-size: 1.5em;
-  font-size: 100%;
 }
 </code></pre>
             <p>Pixels</p>
             <p>"em"</p>
             <p>Percentage</p>
+            <aside class="notes">Anyone want to guess at what font-size does? Yep, tells you how big the font should be. There's a few ways to do this. You can set it in pixels, which is pretty frequently used. You can also set it as "em"s. I'm just going to read the W3C's definition of ems, because they're smart folks and they have a good one: To allow users to resize the text (in the browser menu), many developers use em instead of pixels.
+
+The em size unit is recommended by the W3C.
+
+1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.</aside>
           </section>
 
           <!-- Fonts-->
@@ -348,6 +364,8 @@
   font: italic bold 10px sans-serif;
 }
 </code></pre>
+
+<aside class="notes">You can also save yourself some space by using shorthand properties. For example, you can set font style, font weight, font size and font family all on one line.</aside>
           </section>
 
           <!-- Exercise-->
