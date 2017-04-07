@@ -328,6 +328,7 @@ www.w3.org/TR/html4/loose.dtd"&gt;
 <pre><code class = "html">&lt;!DOCTYPE html&gt;
 </code></pre>
       <p><small>* The doctype is case-insensitive. <br/>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
+      <aside class="notes">Ok, this looks a bit wild, but fear not. In order for a browser to know that the file you're serving it is indeed HTML and not a plate of spaghetti, you've got to make this declaration and proudly annouce that it's HTML. All you need is the doctype html, not the rest of the noise. </aside>
     </section>
 
     <section>
@@ -338,24 +339,24 @@ www.w3.org/TR/html4/loose.dtd"&gt;
 
 &lt;/html&gt;
 </code></pre>
-
-<aside class="notes">Ok, this looks a bit wild, but fear not. In order for a browser to know that the file you're serving it is indeed HTML and not a plate of spaghetti, you've got to make this declaration and proudly annouce that it's HTML. All you need is the doctype html, not the rest of the noise. </aside>
+the body is visible to the user.</p>
+      <aside class="notes">OK, now that we've told the server that this file is HTML, we're done right? But what's this html tag noise? OK, so, there are occasions where you may have other types of code on a page, such as JavaScript, and those get their own tags, such as "script". When we use the HTML tags, we're saying that everything bound in between them is HTML. They're like the big wrapper over our whole work today. </aside>
     </section>
 
     <section>
       <h3>Head and Body Tags</h3>
       <p><strong>Head:</strong> The head contains the title of the page &amp; meta information about the page. Meta information is not visible to the user, but has many purposes, like providing information to search engines.</p>
-      <p><strong>Body:</strong> The body contains the actual content of the page. Everything that is contained in the body is visible to the user.</p>
-      <aside class="notes">OK, now that we've told the server that this file is HTML, we're done right? But what's this html tag noise? OK, so, there are occasions where you may have other types of code on a page, such as JavaScript, and those get their own tags, such as "script". When we use the HTML tags, we're saying that everything bound in between them is HTML. They're like the big wrapper over our whole work today. </aside>
+      <p><strong>Body:</strong> The body contains the actual content of the page. Everything that is contained in 
+            <aside class="notes">Wait, what? Head and body? So there's a bit of magic that happens between the browser and your HTML. The header is part of that magic. The header tells the browser a lot of valuable information, such as the page's title, and also provides data to search engines. Links to other files also live in the header. But here's the thing. No one will ever know it's there. It just hums away, doing its thing. 
+
+The body is where the public stuff goes. Anything you put inside the body is visible to the user. This is where your paragraphs, your imgages, everything, goes. </aside>
     </section>
 
     <!--example of head and body tags-->
     <section>
       <h3>Head and Body Tags: Example</h3>
       <img src="img/example-headbody.png" alt="example of head and body" />
-      <aside class="notes">Wait, what? Head and body? So there's a bit of magic that happens between the browser and your HTML. The header is part of that magic. The header tells the browser a lot of valuable information, such as the page's title, and also provides data to search engines. Links to other files also live in the header. But here's the thing. No one will ever know it's there. It just hums away, doing its thing. 
 
-The body is where the public stuff goes. Anything you put inside the body is visible to the user. This is where your paragraphs, your imgages, everything, goes. </aside>
     </section>
 
     <section>

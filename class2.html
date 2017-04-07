@@ -388,6 +388,7 @@ The em size unit is recommended by the W3C.
 <pre><code class = "html">&lt;p&gt;This is &lt;em&gt;important.&lt;/em&gt;&lt;/p&gt;
 </code></pre>
             <p>The associated HTML.</p>
+            <aside class="notes">Let's say you want to select all of the "em" tags in side a paragraph. You can do that with a CSS rule. All you need to do is paragraph, then em, your curly braces, and then your properties. </aside>
           </section>
           <section>
             <h3>Selector: Position</h3>
@@ -425,6 +426,7 @@ The em size unit is recommended by the W3C.
             <p>To reuse CSS, we use IDs and classes.</p>
             <img src="img/recycle.jpg" alt="Recycle symbol"/>
             <p><small>Photo credit:  <a href="http://www.flickr.com/photos/yomostro/2502577270/">Yo Mostro</a> <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/">cc</a></small></p>
+            <aside class="notes">CSS enables us to work more efficiently by not repeating ourselves. We're able to set up classes and ID's to help us apply the same rules to different parts of our code. And since we've linked our CSS files, we can access those classes & ID's everywhere. </aside>
           </section>
           <section>
             <h3>IDs vs. Classes</h3>
@@ -432,6 +434,9 @@ The em size unit is recommended by the W3C.
             The "#" is how you tell CSS "this is an id."</p>
             <p><strong>Class</strong> -- Lots of elements can have the same class, i.e., There can be many warnings on one webpage.<br />
             The "." is how you tell CSS "this is a class name."</p>
+<aside class="notes">OK, so, classes vs. ID. Id can only apply to one single element on your page. It cannot be reused. Thing if "Id" as individual, a single identiity. 
+
+Class, however, can be used for multiple elements. You can make all of your paragraphs have a class of "pink" if you'd like them to have a pink background. ID's are identified with the # and then a name, and classes use the  .  and then a name.</aside>
           </section>
           <section>
             <h3>Selector: ID</h3>
@@ -494,11 +499,12 @@ The em size unit is recommended by the W3C.
             <p>Your browser assigns different priorities to CSS depending on the type of selector.</p>
             <ol>
               <li>Important! - <strong>Most Important</strong></li>
-              <li>In line CSS</li>
+              <li>Inline CSS</li>
               <li>ID</li>
               <li>Class</li>
               <li>Element - <strong>Least Important</strong></li>
             </ol>
+            <aside class="notes">This is one of the more challenging concepts in CSS, priority. Sometimes, you'll find that more than 1 CSS rule will have selectors for the same element. So how does CSS decide what rule to go with? In general, there's a kind of super power called "Important" that will always win, but like all superpowers, you've got to be careful. Let's look at this more deeply. </aside>
           </section>
           <section>
             <h3>Cascading priority</h3>
@@ -513,6 +519,7 @@ The em size unit is recommended by the W3C.
   color: blue;
 }
 </code></pre>
+<aside class="notes">The more specific you get, the higher the priority the rule has. So each of these rules is selecting a paragraph. The first is selecting paragraphs with the classes of main, sale, and clearance. That's pretty specific. Paragraphs with the classes of header and title are less specific, and this last paragraph with the class of footer is the least specific.</aside>
           </section>
           <section>
             <h3>Cascading priority</h3>
@@ -526,6 +533,7 @@ a{
 a{ //This rule wins
   background-color: black;
 }
+<aside class="notes">So what's up with this? If you've got three CSS rules for the a tag (so your links) Which ones wins? This is where the cascade of cascading style sheets comes in-the rule at the BOTTOM of the style sheet (the bottom of the cascade) wins. So in this example, we'd expect our links to come out black, rather than yellow or teal. If we removed that last rule, they'd be teal, because that's lower in the cascade.</aside>
 </code></pre>
           </section>
 
@@ -542,10 +550,12 @@ a{ //This rule wins
               <li>height</li>
             </ul>
             <p><a href = "https://developer.mozilla.org/en-US/docs/CSS/CSS_Reference">Comprehensive list of all CSS properties</a></p>
+            <aside class="notes">There are many CSS properties, but by and large, their names are self explanatory. If you want a complete, and exhaustive, list of ALL the possible CSS properties, the Mozilla Developer Network provides a great reference. Let's take a look here. </aside>
           </section>
 
           <section>
             <h2>Questions?</h2>
+            
           </section>
 </div><!-- Close slides -->
 
